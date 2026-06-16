@@ -1,7 +1,7 @@
-"""hasher_a1d914 - File utility."""
+"""hasher_373aa2 - File utility."""
 import os, sys
 from pathlib import Path
-APP_TAG = "hasher_a1d914"
+APP_TAG = "hasher_373aa2"
 def scan_directory(path: str = ".") -> list:
     entries = []
     for entry in Path(path).iterdir():

